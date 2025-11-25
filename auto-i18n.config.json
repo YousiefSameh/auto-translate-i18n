@@ -1,0 +1,8 @@
+{
+  "localesDir": "./tests/locales",
+  "sourceLang": "en",
+  "targetLangs": ["ar"],
+  "openaiApiKey": "ghp_your_github_token_here",
+  "include": ["tests/fixtures/**/*.tsx", "manual_test/**/*.tsx"],
+  "exclude": []
+}
