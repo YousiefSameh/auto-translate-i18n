@@ -43,17 +43,16 @@ npm install --save-dev auto-i18n
 ### 1. Initialize Configuration
 
 Create a `auto-i18n.config.json` file in your project root:
-
+```json
 {
-"localesDir": "./public/locales",
-"sourceLang": "en",
-"targetLangs": ["es", "fr", "de", "ja"],
-"include": ["src/**/*.{tsx,jsx}"],
-"exclude": ["**/node_modules/**", "**/.next/**"],
-"openaiApiKey": "ghp_your_github_token_here" // Optional
+  "localesDir": "./public/locales",
+  "sourceLang": "en",
+  "targetLangs": ["es", "fr", "de", "ja"],
+  "include": ["src/**/*.{tsx,jsx}"],
+  "exclude": ["**/node_modules/**", "**/.next/**"],
+  "openaiApiKey": "ghp_your_github_token_here" // Optional
 }
-
-````
+```
 
 > **Note**: You can also set the API key via the `OPENAI_API_KEY` environment variable or the `--key` CLI flag.
 
@@ -63,7 +62,7 @@ Scan your project for translatable strings. This creates your source language fi
 
 ```bash
 auto-i18n extract
-````
+```
 
 ### 3. Translate with AI
 
